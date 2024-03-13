@@ -1,0 +1,32 @@
+{% extends 'shared/layout.html' %}
+
+{% block maincontent %}
+<div class = "introduction">
+  <!-- The left column containing the professional headshot -->
+  <div class = "column">
+    <img src="../static/main/images/my_photo.jpeg" alt = "A photo of Sifatul Islam Anindho" loading="lazy">
+  </div>
+  <!-- The right column containing the professional introduction -->
+  <div class = "column">
+    <p>
+      <h1>Sifatul Anindho </h1>
+      is a senior undergraduate student at Michigan State University. His major is Computer Science with a concentration in Business. At Michigan State, Sifat held part-time positions as a Research Assistant and a Teaching Assistant with the CSE department. He is also a member of the AI Club. Sifat will be graduating in June 2024 and is planning to pursue a Ph.D. in Computer Science following graduation.
+      <br><br>
+      Sifat has over 2 years of experience teaching Computer Science as a Teaching Assistant for <em>Algorithmic Thinking and Programming</em>, an introductory course in computer programming. In this role, he guided over 200 Michigan State undergraduate students to build a strong foundation in programming and fundamental algorithmic thinking. Sifat is passionate about fostering a deep understanding of computer programming in his students and inspire them to enjoy learning Computer Science. He also has a strong mathematical background, particularly linear algebra, probability and statistics, and was the recipient of the internationally renowned Outstanding Cambridge Learner's Award in AS Level Mathematics in 2018.
+      <br><br>
+      Sifat's academic and technical interests are in machine learning and artificial intelligence. Previously, he implemented an automatic speech recognition system using a Bi-LSTM model. He also developed a text classification model on Kaggle to predict the sentiment of a collection of Tweets, particularly whether a Tweet is about a disaster. He is currently building a machine learning based recommendation system for Whirlpool Corporation as his undergraduate capstone project. Some of his independent projects are available on the projects page.
+      <br><br>
+    </p>
+    </div>
+</div>
+<!-- Another block of content -->
+<hr>
+
+<div class = "fun-fact">
+  <br><br>
+  <p>A fun fact about me: <b>{{fun_fact}}</b> </p>
+</div>
+
+{% endblock %}
+
+
