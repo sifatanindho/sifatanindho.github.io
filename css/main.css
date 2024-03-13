@@ -1,0 +1,84 @@
+.introduction {
+    display: flex;
+    flex: 1;
+}
+
+.column {
+    text-align: center;
+    /* display: flex; */
+    align-items: right;
+    width: 100vw;
+    height: 50vh;
+    margin-right: 12%;
+    margin-top: 8%;
+    font: 20 1.2em "Helvetica", Helvetica, sans-serif;
+    overflow-y: scroll;
+
+}
+
+.column img {
+    margin-left: 22%;
+    margin-top: 0%;
+    display: cover;
+    width: 30vw;
+    height: 50vh;
+    object-fit: cover;
+    justify-content: center;
+    }
+
+.fun-fact {
+    display: block;
+    font-size: 1.7em;
+    margin: -2%;
+    height: 20vh;
+    overflow-y: auto;
+    text-align: center;
+}
+
+.resume {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    font: 20 1.2em "Helvetica", Helvetica, sans-serif;
+    overflow-y: scroll;
+}
+
+.institution-location {
+    /* right justify the location */
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+
+.position-dates {
+    /* right justify the dates */
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+
+.position-responsibilities {
+    /* left justify the title */
+    font-size: larger;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 0%;
+}
+
+@media (max-width: 650px) {
+    .column {
+      width: 100%; /* Make each column take up the full width of the container */
+      float: none; /* Remove floating to stack the columns vertically */
+    }
+
+    .column img {
+        margin-left: 0%;
+        margin-top: 0%;
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        justify-content: center;
+    }
+  }

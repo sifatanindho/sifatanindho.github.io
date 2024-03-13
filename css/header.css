@@ -1,0 +1,6 @@
+.header {
+    background: url("../images/banner-1.jpg");
+    margin: -2%;
+    background-size: cover;
+    height: 50vh;
+}

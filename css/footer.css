@@ -1,0 +1,15 @@
+footer {
+    background-color: black;
+    font: 30 1.0em 'Helvetica', Helvetica, Sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    width: 102%;
+    margin: 0%;  
+    margin-left:-1%;    
+    z-index: 4;
+}
