@@ -67,18 +67,29 @@
 }
 
 @media (max-width: 650px) {
+    .introduction {
+        display: block;
+    }
     .column {
-      width: 100%; /* Make each column take up the full width of the container */
-      float: none; /* Remove floating to stack the columns vertically */
+      width: 80vw; /* Make each column take up the full width of the container */
+      height: 25vh;
+      margin: 5%;
     }
 
     .column img {
-        margin-left: 0%;
-        margin-top: 0%;
-        display: block;
-        width: 100%;
-        height: auto;
+        display: flex;
+        width: 70%;
+        height: 100%;
         object-fit: cover;
         justify-content: center;
+    }
+
+    .fun-fact {
+        display: block;
+        font-size: 1.7em;
+        margin: 0%;
+        height: 20vh;
+        overflow-y: auto;
+        text-align: center;
     }
   }
