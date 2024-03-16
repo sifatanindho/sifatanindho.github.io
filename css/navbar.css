@@ -2,14 +2,14 @@
     display: flex;
     margin: -2%;
     align-items: center;
-    height: 6vh;
+    height: 10vh;
     background-color: #000000;
     color: #ffffff;
     font-size: 1.2em;
 }
 
 .hw-title {
-    font: 30 1.4em 'Helvetica', Helvetica, Sans-serif;
+    font: 30 1.0em 'Helvetica', Helvetica, Sans-serif;
     margin-left: 3%;
 }
 
