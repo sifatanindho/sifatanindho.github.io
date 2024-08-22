@@ -1,6 +1,7 @@
 .navbar {
     display: flex;
     margin: -2%;
+    margin-top: 0%;
     align-items: center;
     height: 10vh;
     background-color: #000000;
