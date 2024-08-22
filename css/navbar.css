@@ -3,7 +3,7 @@
     margin: -2%;
     margin-top: 0%;
     align-items: center;
-    height: 15vh;
+    height: 10vh;
     background-color: #000000;
     color: #ffffff;
     font-size: 1.2em;
@@ -18,7 +18,7 @@
     margin-left: auto;
     margin-bottom: 0%;
     margin-right: 8%;
-    font:30 1.2em 'Helvetica', Helvetica, Sans-serif;
+    font: 30 1.2em 'Helvetica', Helvetica, Sans-serif;
 }
 
 #home-link {
