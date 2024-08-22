@@ -20,8 +20,8 @@
     margin-left: 22%;
     margin-top: 0%;
     display: cover;
-    width: 20vw;
-    height: 50vh;
+    width: 6vw;
+    height: 30vh;
     object-fit: cover;
     justify-content: center;
     }
@@ -41,7 +41,7 @@
     margin-right: 5%;
     margin-bottom: 5%;
     font: 20 1.2em "Helvetica", Helvetica, sans-serif;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
 
 .institution-location {
