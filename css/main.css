@@ -19,7 +19,7 @@
 .column img {
     margin-left: 22%;
     margin-top: 0%;
-    display: contain;
+    display: cover;
     width: 100vw;
     height: 30vh;
     object-fit: contain;
