@@ -110,13 +110,25 @@ main { padding: 2.5rem 0 5rem; }
 
 /* Home intro */
 .intro { padding: 0.5rem 0 0.5rem; }
-.intro-name { font-size: 1.85rem; font-weight: 700; line-height: 1.2; margin-bottom: 0.3rem; }
-.intro-tagline { color: #777; margin-bottom: 1rem; font-size: 0.95rem; }
-.intro-bio { max-width: 640px; color: #333; margin-bottom: 1rem; }
+
+.headshot {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1.5rem;
+  border: 3px solid #e8e8e8;
+}
+
+.intro-name { font-size: 1.85rem; font-weight: 700; line-height: 1.2; margin-bottom: 0.3rem; text-align: center; }
+.intro-tagline { color: #777; margin-bottom: 1rem; font-size: 0.95rem; text-align: center; }
+.intro-bio { max-width: 580px; color: #333; margin: 0 auto 1rem; text-align: center; }
 
 .intro-links {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.15rem 1rem;
   font-size: 0.875rem;
   color: #666;
