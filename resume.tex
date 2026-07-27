@@ -1,0 +1,148 @@
+\documentclass[9pt,letterpaper]{article}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{microtype}
+\pagestyle{empty}
+\linespread{0.94}
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{0pt}
+\titleformat{\section}{\large\bfseries}{}{0pt}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{2pt}
+\setlist[itemize]{leftmargin=13pt,itemsep=0.7pt,topsep=1pt,parsep=0pt,partopsep=0pt}
+\newcommand{\entry}[4]{\textbf{#1}\hfill #2\\\textit{#3}\hfill\textit{#4}\vspace{-3pt}}
+\newcommand{\project}[3]{\textbf{#1}\hfill\textit{#3}\\\textit{#2}\vspace{-3pt}}
+\newcommand{\pub}[1]{\item #1}
+
+\begin{document}
+
+\begin{center}
+{\LARGE\textbf{Sifatul Anindho}}\\[-1pt]
+Fort Collins, CO $\mid$ \href{mailto:sifatul.anindho@colostate.edu}{sifatul.anindho@colostate.edu} $\mid$ LinkedIn $\mid$ GitHub $\mid$ Google Scholar $\mid$ Website
+\end{center}
+\vspace{-8pt}
+
+\section{Research Interests}
+Multimodal foundation models, vision-language reasoning, model abstention and selective prediction, post-training, reinforcement learning, intervention timing, and human-centered AI.
+
+\section{Education}
+\entry{Colorado State University}{Fort Collins, CO}{Ph.D. in Computer Science, GPA: 4.00/4.00}{Expected May 2029}
+Advisor: Nikhil Krishnaswamy\\[-2pt]
+\entry{Colorado State University}{Fort Collins, CO}{M.S. in Computer Science, GPA: 4.00/4.00}{July 2026}
+Advisor: Nathaniel Blanchard\\[-2pt]
+\entry{Michigan State University}{East Lansing, MI}{B.S. in Computer Science, GPA: 3.81/4.00}{May 2024}
+
+\section{Research and Engineering Experience}
+\entry{SIGNAL Lab, Colorado State University}{Fort Collins, CO}{Graduate Research Assistant, Advisor: Nikhil Krishnaswamy}{Aug. 2026--Present}
+\begin{itemize}
+\item Investigate evidence-aware answering, abstention, and intervention timing for vision-language models in multimodal task guidance.
+\item Develop evaluations for unsupported answering and insufficient visual evidence in lower-limb ultrasound guidance.
+\item Lead continued development and integration of the lower-limb DVT use case within the ARPA-H PARADIGM program.
+\end{itemize}
+
+\entry{IMPACT Lab, Colorado State University}{Fort Collins, CO}{Graduate Research Assistant, Advisor: Nathaniel Blanchard}{Aug. 2024--July 2026}
+\begin{itemize}
+\item Designed participant-grounded retrospective cued-recall methods for multimodal cognitive-affective state annotation in collaborative and clinical tasks.
+\item Built multimodal datasets aligning video, audio, transcripts, facial behavior, and self-reported internal states.
+\item Evaluated facial, acoustic, linguistic, and temporal models using group-disjoint validation and analyzed ordered state transitions.
+\item Contributed to the DARPA FACT and ARPA-H PARADIGM research programs.
+\end{itemize}
+
+\entry{HLR Lab, Michigan State University}{East Lansing, MI}{Undergraduate Research Assistant, Advisor: Parisa Kordjamshidi}{May 2024--July 2024}
+\begin{itemize}
+\item Developed an LLM-supported natural-language interface for constructing complex neuro-symbolic models with DomiKnowS.
+\end{itemize}
+
+\entry{Whirlpool}{Benton Harbor, MI}{Senior Design Intern}{Jan. 2024--May 2024}
+\begin{itemize}
+\item Developed software for a human-machine interface supporting personalized interaction with Whirlpool smart ovens.
+\end{itemize}
+
+\entry{Liu Lab, Michigan State University}{East Lansing, MI}{Undergraduate Research Assistant, Advisor: Kevin Liu}{May 2023--Aug. 2023}
+\begin{itemize}
+\item Investigated the empirical performance of phylogenetic-estimation algorithms using tree-space analyses.
+\end{itemize}
+
+\section{Selected Research and Engineering Projects}
+\project{VIGIL: Real-Time Multimodal Guidance for Lower-Limb DVT Ultrasound}{ARPA-H PARADIGM}{May 2025--Present}
+\begin{itemize}
+\item Implemented major components of a real-time ROS2 guidance platform supporting live ultrasound sessions and reproducible offline evaluation from recorded ROS bags.
+\item Integrated VQA, probe-state detection, task-state tracking, and vein-detection models into an end-to-end multimodal guidance pipeline.
+\item Wired outputs from multiple ROS nodes into context-rich VQA prompts for procedural guidance generation.
+\item Profiled latency across ultrasound processing, model inference, VQA generation, and interface rendering to diagnose system bottlenecks.
+\item Led recurring integration and testing across independently developed components, supporting site visits, research demonstrations, and annual external evaluation by MIT Lincoln Laboratory.
+\item Identified hallucination, overfitting, and unsupported-answering failures during integration, motivating current research on training VLMs to recognize insufficient visual evidence.
+\item Collaborated with researchers and engineers across Colorado State University, University of Michigan, University of Pennsylvania, and Cornell Tech.
+\end{itemize}
+
+\project{FACT: Friction for Accountability in Conversational Transactions}{DARPA FACT}{Aug. 2024--Aug. 2025}
+\begin{itemize}
+\item Designed a retrospective cued-recall framework for synchronizing participant-reported cognitive-affective trajectories with multimodal interaction data.
+\item Developed temporal-alignment and fuzzy sequence-labeling procedures for uncertain internal-state boundaries.
+\item Built facial-behavior and multimodal feature-extraction pipelines for studying AI-assistant intervention effectiveness.
+\end{itemize}
+
+\section{Peer-Reviewed Publications}
+\begin{itemize}
+\pub{\textbf{S. Anindho}, et al. ``Ordered Network Analysis of Epistemic Emotions during Collaborative Problem Solving.'' \textit{International Conference on Artificial Intelligence in Education (AIED)}, 2026.}
+\pub{V. Venkatesha, et al. ``Using LLMs to Annotate Pedagogical Moves: You Know What I Mean?'' \textit{International Conference on Artificial Intelligence in Education (AIED)}, 2026.}
+\pub{\textbf{S. Anindho}, et al. ``Evaluating Web-Trained Facial Expression Recognition in Collaborative Problem Solving.'' \textit{IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)}, 2026.}
+\pub{E. Seefried, et al. ``CSU101: An Educational Dataset for Introductory Computer Vision.'' \textit{IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)}, 2026.}
+\pub{V. Venkatesha, et al. ``Detecting Self-Reported Cognitive-Affective States in Collaborative Problem Solving from Prosodic and Linguistic Features.'' \textit{Educational Data Mining (EDM), Poster/Demo Track}, 2026.}
+\pub{\textbf{S. Anindho} and N. Blanchard. ``Identifying and Modeling Epistemic Emotions in Collaborative Problem Solving.'' \textit{Educational Data Mining (EDM), Doctoral Consortium}, 2026.}
+\pub{\textbf{S. Anindho}, et al. ``A Methodological Framework for Capturing Cognitive-Affective States in Collaborative Learning.'' \textit{Multimodal, Multiparty Learning Analytics Workshop at Educational Data Mining (EDM)}, 2025.}
+\pub{\textbf{S. Anindho}, et al. ``An Exploration of Internal States in Collaborative Problem Solving.'' \textit{International Conference on Human-Computer Interaction (HCII)}, pp. 135--150, 2025.}
+\end{itemize}
+
+\section{Open-Source Software}
+\project{TRACE: Transparency, Reflection, and Accountability in Collaborative Exchanges}{Used by DARPA FACT and NSF iSAT}{June 2025--Mar. 2026}
+\begin{itemize}
+\item Contributed to a reusable platform for constructing and running complex multimodal human-AI interaction demonstrations.
+\end{itemize}
+
+\project{Lab Operations Scheduler}{Used by the CSU Department of Computer Science}{Sept. 2025--Dec. 2025}
+\begin{itemize}
+\item Built an integer-programming system that assigned 50 lab operators to time slots under availability and preference constraints.
+\end{itemize}
+
+\project{Multi-Label Video Annotation Tool}{Used by ARPA-H PARADIGM}{Oct. 2025}
+\begin{itemize}
+\item Built a desktop application for efficient multi-label annotation of research videos.
+\end{itemize}
+
+\project{Retrospective Cued-Recall Annotation Platform}{Used by DARPA FACT}{Feb. 2025}
+\begin{itemize}
+\item Built a web-based platform supporting self-caught and probe-caught retrospective reporting synchronized with session video.
+\end{itemize}
+
+\section{Selected Research Presentations and Demonstrations}
+ARPA-H VIGIL Site Visit, 2025; ARPA-H PARADIGM PI Meeting, 2025; DARPA FACT PI Meeting, 2025; International Conference on Human-Computer Interaction, 2025; Mid-Michigan Symposium for Undergraduate Research Experiences, 2024.
+
+\section{Teaching Experience}
+\textbf{Colorado State University} \hfill Fort Collins, CO\\
+\textit{Graduate Teaching Assistant} \hfill \textit{Aug. 2024--Present}\\[-2pt]
+Courses: Introduction to Machine Learning; Machine Learning Foundations and Practice; Software Development; Computational Thinking with Java.\\[-1pt]
+\textbf{Michigan State University} \hfill East Lansing, MI\\
+\textit{Undergraduate Teaching Assistant} \hfill \textit{Jan. 2022--May 2024}\\[-2pt]
+Course: Algorithmic Thinking and Programming; five semesters.
+
+\section{Academic Service}
+Reviewer: ACL 2025, ACL 2026, CVPRW 2026 $\mid$ Graduate Program Committee Representative, CSU, 2026 $\mid$ Judge, CSU CURC, 2026
+
+\section{Honors and Awards}
+\textbf{Outstanding Cambridge Learner Award}, University of Cambridge, 2018 --- Highest score in the world in AS Level Mathematics.\\
+\textbf{Global Spartan Scholarship}, Michigan State University, 2021 --- Awarded to top-achieving international undergraduates.
+
+\section{Technical Skills}
+\textbf{Languages:} Python, C++, Java, JavaScript/TypeScript, SQL, R, Bash, MATLAB\\
+\textbf{Machine Learning and AI:} PyTorch, TensorFlow, JAX, Hugging Face Transformers, TRL, scikit-learn, PyTorch Lightning, XGBoost, OpenCV, pandas, NumPy, SciPy\\
+\textbf{Methods:} LLMs, VLMs, multimodal learning, reinforcement learning, preference optimization, fine-tuning, representation learning, uncertainty estimation, selective prediction, experimental design, statistical modeling, time-series analysis\\
+\textbf{Systems and MLOps:} ROS2, Docker, Kubernetes, Linux, Git, CI/CD, MLflow, Weights \& Biases, FastAPI, Flask, real-time inference, profiling, performance optimization\\
+\textbf{Cloud and Data:} AWS, GCP, Azure, SageMaker, Spark, PostgreSQL, MySQL, MongoDB
+
+\end{document}
